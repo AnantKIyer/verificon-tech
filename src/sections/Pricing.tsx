@@ -1,3 +1,6 @@
+'use client';
+
+import {motion} from 'framer-motion';
 import CheckIcon from "@/assets/check.svg";
 import { twMerge } from "tailwind-merge";
 
