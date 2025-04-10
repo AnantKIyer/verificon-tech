@@ -100,12 +100,12 @@ export const Testimonials = () => {
         </p>
         </div>
 
-        <div className="flex justify-center">
-          <TestimonialsColumn testimonials={firstColumn} />
-          <TestimonialsColumn testimonials={secondColumn} className="hidden md:flex" />
-          <TestimonialsColumn testimonials={thirdColumn} className="hidden lg:flex" />
+        <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[738px] overflow-hidden">
+          <TestimonialsColumn testimonials={firstColumn}  duration={13}/>
+          <TestimonialsColumn testimonials={secondColumn} duration={20} className="hidden md:block" />
+          <TestimonialsColumn testimonials={thirdColumn} duration={15} className="hidden lg:block" />
         </div>
       </div>
     </section>
-  );
+  ); 
 };
